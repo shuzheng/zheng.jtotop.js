@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.min.1.5.js"></script>
+<script type="text/javascript" src="js/jToTop.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	//四种静态方法调用
+	$("#shang").click(function(){
+		$.top();//点击后到顶部
+	});
+	$("#zhong").click(function(){
+		$.toId("myId");//点击后到指定位置
+	});
+	$("#xia").click(function(){
+		$.footer();//点击后到底部
+	});
+	$("#zidingyi").click(function(){
+		$.jTo("here",5000);//点击后到底部
+	});
+	//一种对象方法，直接加在对象上的方法，格式如下
+	$("#totop").jToTop();
+});
+
+</script>
+<title>jToTop</title>
+<style type="text/css">
+#totop{position:fixed;bottom:0;right:10px;background:#c2c;}
+
+#shangxia{position:fixed;top:40%;left:50%;margin-left:-520px;display:block;}
+#shang{position:relative;cursor:pointer;width:64px;margin:10px 0;font-size:12px;color:#00f;background:#ccc;}
+#zhong{position:relative;cursor:pointer;width:64px;margin:10px 0;font-size:12px;color:#00f;background:#ccc;}
+#xia{position:relative;cursor:pointer;width:64px;margin:10px 0;font-size:12px;color:#00f;background:#ccc;}
+#zidingyi{position:relative;cursor:pointer;width:64px;margin:10px 0;font-size:12px;color:#00f;background:#ccc;}
+</style>
+</head>
+<body>
+到顶部啦~
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<div id="myId">我就是“指定”位置~</div>
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<div id="here">我就是“自定义”位置~</div>
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+<a id="totop" href="#">返回页首↑</a>
+
+<div id="shangxia">
+	<div id="shang">顶部位置</div>
+	<div id="zhong">指定位置</div>
+	<div id="xia">底部位置</div>
+	<div id="zidingyi">自定义id位置和速度</div>
+</div>
+到底部啦~
+</body>
+</html>
