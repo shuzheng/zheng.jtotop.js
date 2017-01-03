@@ -6,7 +6,7 @@
  * E-mail:469741414@qq.com
  * http://www.zhangshuzheng.cn
  * https://github.com/shuzheng/zheng.jtotop.js
- *
+ * versioin: 1.0.0
  */
 (function($){
 	//对象方法
