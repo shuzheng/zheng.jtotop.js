@@ -45,11 +45,7 @@
 			here=$("#"+id).offset().top;
 		}
 		//开始滑动
-		if($.browser.safari){//非IE
-			$("body").animate({scrollTop:here}, speed); 
-		}else{//IE
-			$("html").animate({scrollTop:here}, speed);
-		}
+		$("html, body").animate({scrollTop:here}, speed);
 		return false;
 	}
 	//返回全文页面高度
